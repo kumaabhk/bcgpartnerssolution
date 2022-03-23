@@ -36,12 +36,12 @@ class Ratings():
 
         # joined with title_basics to get the primary name of the movie
         # This results the top 20 movies for numvotes > 50 based on ranking along with the primary name
-        #df_movie = df_sample.join(df_title_basics, df_sample.tconst_ratings == df_title_basics.tconst, how="left")
+        df_movie = df_sample.join(df_title_basics, df_sample.tconst_ratings == df_title_basics.tconst, how="left")
 
         # Solution for 2nd part of question
 
 
-        return df_sample
+        return df_movie
 
 
 
