@@ -39,11 +39,9 @@ class Ratings():
         #df_movie = df_sample.join(df_title_basics, df_sample.tconst_ratings == df_title_basics.tconst, how="left")
 
         # Solution for 2nd part of question
-        print(df_name_basics.printSchema())
 
-        df_name_basics = df_name_basics.select("nconst","primaryName", explode(df_name_basics.knownForTitles))
 
-        return df_ratings, df_name
+        return df_sample
 
 
 
